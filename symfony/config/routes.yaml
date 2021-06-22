@@ -1,0 +1,14 @@
+allCustomers:
+  methods: [GET]
+  path: /api/{API_VERSION}/customers
+  controller: App\Controller\CustomerController::getAllCustomers
+
+createCustomer:
+  methods: [PUT]
+  path: /api/{API_VERSION}/customer/add
+  controller: App\Controller\CustomerController::createCustomer
+
+getCustomer:
+  methods: [GET]
+  path: /api/{API_VERSION}/customer/{id}
+  controller: App\Controller\CustomerController::getCustomer
