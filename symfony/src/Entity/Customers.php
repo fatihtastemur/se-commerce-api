@@ -33,14 +33,13 @@ class Customers
     private $password;
 
     /**
-     * * @var \DateTime
-     *
+     * @var \DateTime
      * @ORM\Column(name="since", type="datetime", options={"default"="CURRENT_TIMESTAMP"})
      */
     private $since = 'CURRENT_TIMESTAMP';
 
     /**
-     * @ORM\Column(name="revenue", type="float", options={"default"="0.00"})
+     * @ORM\Column(name="revenue", type="float", options={"default"="0"})
      */
     private $revenue;
 
